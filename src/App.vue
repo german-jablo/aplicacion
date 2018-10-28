@@ -23,5 +23,12 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+
+  width: 500px;
+    height: 500px;
+    background-color: pink;
+    position: absolute;
+    left: 200px;
+    top: 100px;
 }
 </style>
