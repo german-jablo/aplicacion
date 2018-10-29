@@ -1,17 +1,17 @@
 <template>
   <div>
-    <PlegableIzquierda/>
+    <PlegableDerecha/>
   </div>
 </template>
 
 <script>
 
 
-import PlegableIzquierda from './PlegableIzquierda'
+import PlegableDerecha from './PlegableDerecha'
 
 export default {
   name: 'Listas',
-  components: { PlegableIzquierda }
+  components: { PlegableDerecha }
   }
 </script>
 
@@ -20,7 +20,7 @@ export default {
 div {
   width: 50%;
   height: 100%;
-  background-color: yellow;
+  background-color: gray;
   float: left;
 }
 </style>

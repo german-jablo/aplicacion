@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <PlegableDerecha/>
-    <PlegableIzquierda/>
+    <Listas/>
+    <Calendario/>
   </div>
 </template>
 
@@ -9,11 +9,13 @@
 import PlegableDerecha from './components/PlegableDerecha'
 import PlegableAbajo from './components/PlegableAbajo'
 import PlegableIzquierda from './components/PlegableIzquierda'
+import Listas from './components/Listas'
+import Calendario from './components/Calendario'
 
 export default {
   name: 'App',
   components: {
-    PlegableDerecha, PlegableAbajo, PlegableIzquierda,
+    PlegableDerecha, PlegableAbajo, PlegableIzquierda, Listas, Calendario
   }
 }
 </script>
@@ -27,7 +29,7 @@ export default {
   #app {
     overflow-x: hidden;
     background-color: pink;
-    width: 100%;
+    width: 200%;
     height: 100%;
     position: absolute;
   }
