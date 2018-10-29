@@ -13,20 +13,22 @@ import PlegableIzquierda from './components/PlegableIzquierda'
 export default {
   name: 'App',
   components: {
-    PlegableDerecha, PlegableAbajo, PlegableIzquierda
+    PlegableDerecha, PlegableAbajo, PlegableIzquierda,
   }
 }
 </script>
 
 <style>
-#app {
-  padding-left: 50px;
-  padding-right: 50px;
-  width: 400px;
-  height: 450px;
-  position: absolute;
-  left: 200px;
-  top: 100px;
-  background-color: pink;
-}
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #app {
+    overflow-x: hidden;
+    background-color: pink;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
 </style>
