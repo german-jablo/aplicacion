@@ -1,34 +1,32 @@
 <template>
   <div id="app">
-    <HelloWorld/>
+    <PlegableDerecha/>
+    <PlegableIzquierda/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import PlegableDerecha from './components/PlegableDerecha'
+import PlegableAbajo from './components/PlegableAbajo'
+import PlegableIzquierda from './components/PlegableIzquierda'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    PlegableDerecha, PlegableAbajo, PlegableIzquierda
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-
-  width: 500px;
-    height: 500px;
-    background-color: pink;
-    position: absolute;
-    left: 200px;
-    top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 400px;
+  height: 450px;
+  position: absolute;
+  left: 200px;
+  top: 100px;
+  background-color: pink;
 }
 </style>
