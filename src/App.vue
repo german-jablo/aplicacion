@@ -18,6 +18,17 @@ export default {
     PlegableDerecha, PlegableAbajo, PlegableIzquierda, Listas, Calendario
   }
 }
+
+/* window.onscroll = function Desplazando() {
+document.getElementById('app').innerHTML='Escrito por JS '+ window.pageXOffset;
+afterDesplazando();
+};
+
+function afterDesplazando() {
+  document.getElementById('app').innerHTML='deje de desplazarme'+ window.pageXOffset;
+}  */
+
+
 </script>
 
 <style>
@@ -32,5 +43,11 @@ export default {
     width: 200%;
     height: 100%;
     position: absolute;
+  }
+
+  @media screen and (min-width: 660px) {
+    #app {
+      width: 100%;
+    }
   }
 </style>

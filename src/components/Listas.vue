@@ -23,4 +23,10 @@ div {
   background-color: yellow;
   float: left;
 }
+
+@media screen and (min-width: 660px)  {
+  div {
+  width: 40%;
+  }
+}
 </style>

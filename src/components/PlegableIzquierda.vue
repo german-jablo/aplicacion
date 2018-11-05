@@ -21,7 +21,7 @@ export default {
 }
 
 #plegado {
-  width: 300px;
+  width: 260px;
   height: 100%;
   position: absolute;
   right: 0;
@@ -32,6 +32,6 @@ export default {
 }
 
 #plegado:hover{
-  transform: translate(250px, 0px);
+  transform: translate(210px, 0px);
 }
 </style>

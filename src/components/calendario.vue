@@ -23,4 +23,10 @@ div {
   background-color: gray;
   float: left;
 }
+
+@media screen and (min-width: 660px)  {
+  div {
+  width: 60%;
+}
+}
 </style>
