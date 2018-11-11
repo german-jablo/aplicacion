@@ -148,12 +148,12 @@ button:focus {outline:0;}
 .hamburger--arrowturn.isActive .hamburger-inner {
   transform: rotate(-180deg); }
   .hamburger--arrowturn.isActive .hamburger-inner::before {
-    -webkit-transform: translateX(22px) translateY(3px) rotate(45deg);
-    -ms-transform: translateX(22px) translateY(3px) rotate(45deg);
+    -webkit-transform: translateX(11px) translateY(5.2px) rotate(45deg) scaleX(0.5);
+    -ms-transform: translateX(11px) translateY(5.2px) rotate(45deg) scaleX(0.5);
     transform: translateX(11px) translateY(5.2px) rotate(45deg) scaleX(0.5);
   }
   .hamburger--arrowturn.isActive .hamburger-inner::after {
-    -webkit-transform: translateX(22px) translateY(3px) rotate(45deg);
-    -ms-transform: translateX(22px) translateY(3px) rotate(45deg);
+    -webkit-transform: translateX(11px) translateY(5.2px) rotate(-45deg) scaleX(0.5);
+    -ms-transform: translateX(11px) translateY(5.2px) rotate(-45deg) scaleX(0.5);
     transform: translateX(11px) translateY(-5.2px) rotate(-45deg) scaleX(0.5); }
 </style>
