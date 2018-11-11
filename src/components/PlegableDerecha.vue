@@ -1,29 +1,27 @@
 <template>
-    <div id="desplegado">
-      <div id="plegado" v-bind:class="{ isActive: isActive }">
-        <table>
-          <tr>
-            <td><MenuDerecha/></td>
-            <td>OCULTAR MENÚ V-SHOW</td>
-          </tr>
+  <div class="outer-div" v-bind:class="{ isActive: isActive }">
+    <table>
+      <tr>
+        <td><MenuDerecha/></td>
+        <td>Sección</td>
+      </tr>
            
-          <tr>
-            <td>20</td>
-            <td>CSS</td>
-          </tr>
+      <tr>
+        <td>20</td>
+        <td>CSS</td>
+      </tr>
            
-          <tr>
-            <td>20</td>
-            <td>HTML</td>
-          </tr>
+      <tr>
+        <td>20</td>
+        <td>HTML</td>
+      </tr>
            
-          <tr>
-            <td>60</td>
-            <td>Dreamweaver</td>
-          </tr>
-          </table>
-      </div>
-    </div>
+      <tr>
+        <td>60</td>
+        <td>Dreamweaver</td>
+      </tr>
+      </table>
+    </div>    
 </template>
 
 <script>
@@ -43,46 +41,38 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   
-#desplegado {
-  width: 50px;
+.outer-div {
+  width:50px;
   height: 100%;
-  position: absolute;
-  right: 0px;
+  float: right;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  transition-duration: 0.1s; 
+  background-color: transparent;
 }
 
-#plegado {
+.outer-div.isActive {
   width: 250px;
-  height: 100%;
-  position: absolute;
-  transition-duration: 0.1s;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); /*si quiero quitar la sombra de abajo tendre que usar clip-path, pero como no se ve no es necesario*/
-
 }
 
-#plegado.isActive {
-  transform: translate(-200px, 0px);
+table { 
+  float: left; 
+  border-collapse: collapse;
 }
 
-table { border-collapse: collapse;
-  padding: 0px; margin: 0px; }
+table td:nth-child(1) {
+  width: 48px;
+  min-width: 48px;
+  text-align: center;
+  border-left: transparent 1px solid;
+}
 
 table td:nth-child(2) {
   width: 200px;
-  text-align: right;
 }
 
-table td:first-child {
-  width: 50px;
-  text-align: center;
+tr { 
+  border-bottom: solid 1px;
+  height: 50px;
 }
-
-table td tr {
-    vertical-align: middle;
-}
-
-tr { padding: 50px;
-  margin: 50px;
-  height: 50px; 
-  border-bottom: solid 1px;}
 
 </style>
