@@ -10,7 +10,7 @@
 import PlegableDerecha from './PlegableDerecha'
 
 export default {
-  name: 'Listas',
+  name: 'Calendario',
   components: { PlegableDerecha }
   }
 </script>
