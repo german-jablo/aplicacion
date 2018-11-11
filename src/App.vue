@@ -19,16 +19,6 @@ export default {
   }
 }
 
-/* window.onscroll = function Desplazando() {
-document.getElementById('app').innerHTML='Escrito por JS '+ window.pageXOffset;
-afterDesplazando();
-};
-
-function afterDesplazando() {
-  document.getElementById('app').innerHTML='deje de desplazarme'+ window.pageXOffset;
-}  */
-
-
 </script>
 
 <style>
@@ -39,7 +29,6 @@ function afterDesplazando() {
 
   #app {
     overflow-x: hidden;
-    background-color: pink;
     width: 200%;
     height: 100%;
     position: absolute;

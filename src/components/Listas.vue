@@ -5,7 +5,7 @@
 </template>
 
 <script>
-
+  
 
 import PlegableIzquierda from './PlegableIzquierda'
 
@@ -20,8 +20,8 @@ export default {
 div {
   width: 50%;
   height: 100%;
-  background-color: yellow;
   float: left;
+  background-color: gray;
 }
 
 @media screen and (min-width: 660px)  {

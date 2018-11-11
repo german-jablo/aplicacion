@@ -20,8 +20,8 @@ export default {
 div {
   width: 50%;
   height: 100%;
-  background-color: gray;
   float: left;
+  background-color: yellow;
 }
 
 @media screen and (min-width: 660px)  {
